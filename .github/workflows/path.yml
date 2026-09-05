@@ -1,0 +1,10 @@
+name: colon-path-control
+on:
+  pull_request:
+    paths:
+      - 'a:R:b'
+jobs:
+  marker:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo PATH_FILTER_FIRED
